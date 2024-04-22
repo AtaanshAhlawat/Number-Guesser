@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <!-- Linking Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Linking your custom CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Linking your custom JavaScript file -->
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding-top: 50px;
+        }
+        .navbar {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-brand {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .banner {
+            color: #007bff;
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        #number-guess {
+            font-size: 24px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #result, #history {
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding: 12px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        .btn-primary, .btn-secondary {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+            width: 48%;
+            margin-right: 2%;
+            font-size: 18px;
+            padding: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover, .btn-secondary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top">
+        <a class="navbar-brand" href="#">Number Guesser</a>
+    </nav>
+
+    <main>
+        <h1 class="banner">Guess the Number</h1>
+
+        <!-- Number Guess Input -->
+        <div class="form-group">
+            <input id="number-guess" class="form-control form-control-lg" type="number" placeholder="Enter your guess...">
+        </div>
+
+        <!-- Result Display Area -->
+        <div id="result">
+            <!-- This is where the result will be displayed -->
+        </div>
+
+        <!-- Buttons Section -->
+        <div class="d-flex justify-content-between">
+            <button type="button" id="number-submit" class="btn btn-primary">Check Me</button>
+            <button type="button" id="restart-game" class="btn btn-secondary">Restart</button>
+        </div>
+
+        <!-- Guess History Display Area -->
+        <div id="history">
+            <!-- This is where the guess history will be displayed -->
+        </div>
+    </main>
+
+    <!-- Bootstrap JS and any additional scripts can be placed before closing body tag -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
