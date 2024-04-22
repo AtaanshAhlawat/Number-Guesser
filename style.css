@@ -1,0 +1,22 @@
+
+
+#number-guess, #result, #history {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#history {
+    margin-top: 16px;
+}
+
+.banner {
+    color: #FFD23F;
+    font-size: 72px; /* Reduced font size for better fit */
+    font-family: Arial, sans-serif; /* Changed font family for wider compatibility */
+    text-align: center; /* Center align banner text */
+}
